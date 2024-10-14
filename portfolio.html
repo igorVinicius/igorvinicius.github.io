@@ -58,7 +58,7 @@
         #main-div header,
         #main-div section {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             max-width: 1004px;
             margin: 1% auto;
         }
@@ -111,6 +111,22 @@
             background-color: rgb(26, 26, 26);
             padding: 2px 12px;
         }
+
+        /* Media query para smartphones (telas menores que 768px) */
+        @media (max-width: 767px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            #main-div header div nav {
+                margin-top: 0;
+            }
+
+            #main-div header nav ul li a img {
+                width: 24px;
+            }
+
+        }
     </style>
 </head>
 
@@ -147,9 +163,10 @@
         <section>
             <div>
                 <!-- <img src="./assets/bg.webp" /> -->
-                <iframe style="zoom: 0.75;" src="https://mapa-defesa.sdc.sc.gov.br/" height="800px"
-                    title="Proteção Levada a Sério - Defesa Civil de Santa Catarina"></iframe>
+                <!-- <iframe style="zoom: 0.75;" src="https://mapa-defesa.sdc.sc.gov.br/" height="800px"
+                    title="Proteção Levada a Sério - Defesa Civil de Santa Catarina"></iframe> -->
                 <a href="https://mapa-defesa.sdc.sc.gov.br/" target="_blank">
+                    <img src="./portfolio_screenshots/dcsc_protlevser.png" />
                     <p><strong>Proteção Levada a Sério da Defesa Civil de Santa Catarina</strong> | Atuação:
                         Desenvolvimento</p>
                 </a>
@@ -157,7 +174,8 @@
             <div>
                 <a href="https://earth.ornspace.com" target="_blank">
                     <img src="./portfolio_screenshots/orn_plat.png" />
-                    <p><strong>Plataforma de Dados Ambientais da ORN Space</strong> | Atuação: Projeto, Coordenação,
+                    <p><strong>Plataforma de Dados Ambientais da ORN Space</strong> | Atuação: Concepção, Projeto,
+                        Coordenação,
                         Gestão de
                         equipe e
                         Desenvolvimento</p>
@@ -166,7 +184,8 @@
             <div>
                 <a href="https://ornspace-hydrobeta.streamlit.app/" target="_blank">
                     <img src="./portfolio_screenshots/orn_hydro.png" />
-                    <p><strong>Análise de Dados de Precipitação e Vazão da ORN Space</strong> | Atuação: Projeto e
+                    <p><strong>Análise de Dados de Precipitação e Vazão da ORN Space</strong> | Atuação: Concepção,
+                        Projeto e
                         Desenvolvimento</p>
                 </a>
             </div>

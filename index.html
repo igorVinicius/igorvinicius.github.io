@@ -18,9 +18,10 @@
 
     <style>
         body {
+            position: relative;
             background-image: url("./assets/bg.webp");
-            background-position: center top;
-            background-size: 100% auto;
+            background-position: top right;
+            background-size: auto 100%;
             background-color: black;
             background-repeat: no-repeat;
             color: white;
@@ -44,6 +45,8 @@
             font-style: normal;
 
             margin: 0;
+
+            width: fit-content;
         }
 
         a {
@@ -53,9 +56,41 @@
 
         #main-div {
             /* display: flex; */
-            height: 80svh;
+            /* height: 80svh; */
             margin-top: 6em;
-            margin-left: 12em;
+            margin-left: 10em;
+        }
+
+        /* Media query para tablets (telas entre 768px e 1024px) */
+        @media (max-width: 1620px) and (min-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                background-color: rgba(54, 54, 54, .9);
+            }
+
+            #main-div {
+                margin: 5% 5%;
+            }
+
+        }
+
+        /* Media query para smartphones (telas menores que 768px) */
+        @media (max-width: 767px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                background-color: rgba(54, 54, 54, .9);
+            }
+
+            #main-div {
+                margin: 2% 2%;
+            }
+
         }
     </style>
 </head>
