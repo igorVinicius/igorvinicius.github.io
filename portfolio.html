@@ -1,0 +1,185 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>
+        Igor Vinicius - Portfolio
+    </title>
+
+    <style>
+        body {
+            background-position: center top;
+            background-size: 100% auto;
+            background-color: black;
+            background-repeat: no-repeat;
+            color: white;
+        }
+
+        h1 {
+            font-size: 6.5em;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.8em;
+
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+
+            margin: 0;
+        }
+
+        a {
+            color: #F0AFA9;
+            text-decoration: none;
+        }
+
+        ul,
+        li {
+            list-style: none;
+            width: fit-content;
+        }
+
+        #main-div header,
+        #main-div section {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1004px;
+            margin: 1% auto;
+        }
+
+        #main-div section {
+            flex-direction: column;
+            margin-bottom: 100px;
+        }
+
+        #main-div header {
+            margin-bottom: 0.2em;
+            flex-direction: row;
+        }
+
+        #main-div header div {
+            flex: 1 1 200px;
+        }
+
+        #main-div header div nav {
+            width: fit-content;
+            margin-top: 6em;
+            float: right;
+        }
+
+        #main-div header nav ul li {
+            margin-left: 10px;
+        }
+
+        #main-div header nav ul li a {
+            display: block;
+            padding: 10px;
+        }
+
+        #main-div header nav ul li a img {
+            width: 32px;
+        }
+
+
+        #main-div section div {
+            flex: 1 1 200px;
+            margin-top: 40px;
+        }
+
+        #main-div section div img,
+        #main-div section div iframe {
+            width: 100%;
+        }
+
+        #main-div section div p {
+            background-color: rgb(26, 26, 26);
+            padding: 2px 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main-div">
+        <header>
+            <div style="flex-grow: 8;">
+                <h1>Igor Vinicius<br />
+                    <span style="font-weight: 300;">Portfolio</span>
+                </h1>
+            </div>
+            <div style="flex-grow: 1;">
+                <nav>
+                    <ul class="menu">
+                        <li>
+                            <a href="https://www.linkedin.com/in/igor-tibúrcio-a9357664" target="_blank">
+                                <img src="./assets/linkedin_icon.webp" /></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/igorVinicius" target="_blank">
+                                <img style="background-color: white; border-radius: 10px;"
+                                    src="./assets/git_icon.webp" /></a>
+                        </li>
+                        <li>
+                            <a href="http://lattes.cnpq.br/9740260037234104" target="_blank">
+                                <img style="background-color: white; border-radius: 10px;"
+                                    src="./assets/lattes_icon.webp" />
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section>
+            <div>
+                <!-- <img src="./assets/bg.webp" /> -->
+                <iframe style="zoom: 0.75;" src="https://mapa-defesa.sdc.sc.gov.br/" height="800px"
+                    title="Proteção Levada a Sério - Defesa Civil de Santa Catarina"></iframe>
+                <a href="https://mapa-defesa.sdc.sc.gov.br/">
+                    <p><strong>Proteção Levada a Sério da Defesa Civil de Santa Catarina</strong> | Atuação:
+                        Desenvolvimento</p>
+                </a>
+            </div>
+            <div>
+                <a href="earth.ornspace.com">
+                    <img src="./portfolio_screenshots/orn_plat.png" />
+                    <p><strong>Plataforma de Dados Ambientais da ORN Space</strong> | Atuação: Projeto, Coordenação,
+                        Gestão de
+                        equipe e
+                        Desenvolvimento</p>
+                </a>
+            </div>
+            <div>
+                <a>
+                    <img src="./portfolio_screenshots/orn_hydro.png" />
+                    <p><strong>Análise de Dados de Precipitação e Vazão da ORN Space</strong> | Atuação: Projeto e
+                        Desenvolvimento</p>
+                </a>
+            </div>
+            <!-- <div>
+                <img src="./assets/bg.webp" />
+                <p>Legenda</p>
+            </div>
+            <div>
+                <img src="./assets/bg.webp" />
+                <p>Legenda</p>
+            </div> -->
+        </section>
+    </div>
+</body>
+
+</html>
